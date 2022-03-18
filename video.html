@@ -1,0 +1,98 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Video</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+    <body style="text-align: center;">
+    
+    
+        <section class="sub-header-3">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">  
+                    <i class="fa fa-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="gaming.html">GAMING</a></li>
+                        <li><a href="video.html">VIDEO</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+                <h1>MY EDITED VIDEO</h1>
+        </section>
+    
+    <!---------- Video Content ---------->
+        
+        <section >
+            <br>
+            <br>
+                <div class="video-container">
+                    <video width="75%" controls>
+                        <source src="images/video 1.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            <br>
+            <br>
+        
+                <div class="video-container">
+                    <video width="75%" controls>
+                        <source src="images/video 2.mp4" type="video/mp4">
+                   </video>
+                </div>
+
+            <br>
+            <br>
+
+                <div class="video-container">
+                    <video width="75%" controls>
+                        <source src="images/video 3.mp4" type="video/mp4">
+                   </video>
+                </div>
+
+
+        </section>
+             
+    <!-------- footer ---------->
+    </body>
+
+<section style="text-align: center;">
+    <br>
+    <br>
+    <div class="icons">
+            <a href="https://www.twitch.tv/dark_emperium"><i class="fa fa-twitch"></i></a>
+            <a href="https://www.instagram.com/dark_emperium/"><i class="fa fa-instagram"></i></a>
+            <a href="https://steamcommunity.com/id/Dark_Emperium/"><i class="fa fa-steam"></i></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><i class="fa fa-youtube"></i></a>
+        </div>
+        <p>© 2022 Coded With Visual Studio Code - Website owned by Dark Emperium</p>
+        <p>Coded By Dark Emperium</p>
+    </div>    
+</section>    
+<!----JavaScript for toggle menu---->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"> </script>
+<script>
+    AOS.init();
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>    

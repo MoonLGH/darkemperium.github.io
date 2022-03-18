@@ -1,0 +1,103 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    
+    <section class="sub-header-2">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="gaming.html">GAMING</a></li>
+                    <li><a href="video.html">VIDEO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <video width="100%"id="background-video" playsinline loop autoplay>
+        <source src="images/genshin.mp4" type="video/mp4"> 
+    </video>
+
+    
+<!---------- game ----------->
+    <section class="course">
+        
+        <h1 style="color:rgb(255, 255, 255)">My Favourite Game</h1>
+        
+        <div class="row">
+            <div class="course-col">
+                <h3>Genshin Impact</h3>
+                <p>Genshin Impact takes place in the fantasy world of Teyvat, which is home to seven distinct nations, each of which is tied to a different element and ruled by a different god.</p>
+            </div>
+            <div class="course-col">
+                <h3>Valorant</h3>
+                <p>Valorant is a team-based first-person hero shooter set in the near future.Players play as one of a set of Agents, characters designed based on several countries and cultures around the world.</p>
+            </div>
+            <div class="course-col">
+                <h3>Rocket League</h3>
+                <p>Rocket League has up to eight players assigned to each of the two teams, using rocket-powered vehicles to hit a ball into their opponent's goal and score points over the course of a match.</p>
+            </div>
+        </div>
+    </section>
+    
+<!---------- Facilities ---------->
+    <br>
+    <br>
+    <section class="facility" style="text-align:center">
+    <h1 style="color:rgb(255, 255, 255)">My Current Gaming Rig</h1>
+            <div class="row">
+                <div class="facility-col">
+                    <img src="images/intel.gif">
+                    <h3 style="color:rgb(0, 60, 255)">Intel Core i5 10400</h3>
+                    <h3>CPU</h3>
+                </div>
+                <div class="facility-col">
+                    <img src="images/nvidia.gif">
+                    <h3 style="color:rgb(23, 241, 41)">Nvidia Geforce RTX 3050</h3>
+                    <h3>GPU</h3>
+                </div>
+    
+            </div>
+    </section>
+    
+<!-------- footer ---------->
+<br>
+<br>
+<br>
+<section class="footer">
+        <div class="icons">
+            <a href="https://www.twitch.tv/dark_emperium"><i class="fa fa-twitch"></i></a>
+            <a href="https://www.instagram.com/dark_emperium/"><i class="fa fa-instagram"></i></a>
+            <a href="https://steamcommunity.com/id/Dark_Emperium/"><i class="fa fa-steam"></i></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><i class="fa fa-youtube"></i></a>
+        </div>
+        <p>© 2022 Coded With Visual Studio Code - Website owned by Dark Emperium</p>
+        <p>Coded By Dark Emperium</p>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+</script>  
+    
+</body>
+</html>    
